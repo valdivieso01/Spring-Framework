@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.bolsadeideas.springboot.datajpa.app.dao.IClienteDao;
-import com.bolsadeideas.springboot.datajpa.app.models.entity.Cliente;
+import com.bolsadeideas.springboot.datajpa.app.models.Cliente;
 
 @Service
 public class ClienteServiceImpl  implements IClienteService{

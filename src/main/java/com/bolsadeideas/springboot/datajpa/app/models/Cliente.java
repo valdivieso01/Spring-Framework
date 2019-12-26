@@ -1,4 +1,4 @@
-package com.bolsadeideas.springboot.datajpa.app.models.entity;
+package com.bolsadeideas.springboot.datajpa.app.models;
 
 import java.io.Serializable;
 import java.util.Date;

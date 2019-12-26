@@ -2,7 +2,7 @@ package com.bolsadeideas.springboot.datajpa.app.services;
 
 import java.util.List;
 
-import com.bolsadeideas.springboot.datajpa.app.models.entity.Cliente;
+import com.bolsadeideas.springboot.datajpa.app.models.Cliente;
 
 public interface IClienteService {
 

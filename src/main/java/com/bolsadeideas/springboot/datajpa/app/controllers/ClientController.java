@@ -2,9 +2,7 @@ package com.bolsadeideas.springboot.datajpa.app.controllers;
 
 import javax.validation.Valid;
 
-//import org.apache.tomcat.jni.Status;
 import org.springframework.beans.factory.annotation.Autowired;
-//import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -14,8 +12,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
-import com.bolsadeideas.springboot.datajpa.app.models.entity.Cliente;
+
+import com.bolsadeideas.springboot.datajpa.app.models.Cliente;
 import com.bolsadeideas.springboot.datajpa.app.services.IClienteService;
+
 
 @Controller
 // SessionAttributes obtiene el objeto cliente y almacena los datos en la sesion (lo suamos para guardar el id del cliente)
