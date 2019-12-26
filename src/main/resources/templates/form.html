@@ -3,7 +3,6 @@
 <head th:replace="layout/layout :: head"></head>
 <body>
 	<header th:replace="layout/layout :: header"></header>
-<<<<<<< HEAD
 	<div class="container py-4">
 		<div class="card bg-light">
 			<div class="card-header" th:text="${titulo}"></div>
@@ -54,47 +53,6 @@
 				</div>
 			</div>
 		</div>
-=======
-	<div class="container">
-	<h1 th:text="${titulo}" class="text-secondary border"></h1>
-	<form th:action="@{/form}" th:object="${cliente}" method="post">
-		<div class="form-group row">
-			<label class="col-sm-2 col-form-label">Nombre</label>
-			<div class="col-sm-6">
-				<input type="text" th:field="*{nombre}" class="form-control" th:errorclass="'form-control alert-danger'" />
-				<small class="form-text text-danger" th:if="${#fields.hasErrors('nombre')}" th:errors="*{nombre}"></small>
-			</div>
-		</div>
-		<div class="form-group row">
-			<label class="col-sm-2 col-form-label">Apellido</label>
-			<div class="col-sm-6">
-				<input type="text" th:field="*{apellido}" class="form-control" th:errorclass="'form-control alert-danger'" />
-				<small class="form-text text-danger" th:if="${#fields.hasErrors('apellido')}" th:errors="*{apellido}"></small>
-			</div>
-		</div>
-		<div class="form-group row">
-			<label class="col-sm-2 col-form-label">Email</label>
-			<div class="col-sm-6">
-				<input type="text" th:field="*{email}" class="form-control" th:errorclass="'form-control alert-danger'" />
-				<small class="form-text text-danger" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></small>
-			</div>
-		</div>
-		<div class="form-group row">
-			<label class="col-sm-2 col-form-label">Fecha</label>
-			<div class="col-sm-6">
-				<input type="text" th:field="*{createdAt}" class="form-control" th:errorclass="'form-control alert-danger'" />
-				<small class="form-text text-danger" th:if="${#fields.hasErrors('createdAt')}" th:errors="*{createdAt}"></small>
-			</div>
-		</div>
-		<div class="form-group row">
-			<div class="col-sm-6">
-				<input type="submit" value="Enviar" class="btn btn-primary" />
-			</div>
-		</div>
-	<!--<input type="hidden" th:field="*{id}"/> Al usar SessionAtribute no es necesario-->
-	</form>
-	</div>
->>>>>>> 2d2ce34cc1bbe7e7ea095c544cbb7f19255627d0
 	<footer th:replace="layout/layout :: footer"></footer>
 </body>
 </html>

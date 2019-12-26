@@ -8,6 +8,7 @@ import java.util.List;
 
 public interface IClienteService {
 
+	//findall sin paginacion
 	//public List<Cliente> findAll();
 
 	public Page<Cliente> findAll(Pageable pageable);
