@@ -1,2 +1,10 @@
-INSERT INTO clientes (id, nombre, apellido, email, created_at) VALUES (1, 'Javier', 'Valdivieso', 'javier.valdivieso@possumus.tech', '2019-12-12');
-INSERT INTO clientes (id, nombre, apellido, email, created_at) VALUES (2, 'Pepe', 'Perez', 'pepe@possumus.tech', '2018-12-12');
+INSERT INTO clientes (id, nombre, apellido, email, created_at, foto) VALUES (1, 'Javier', 'Valdivieso', 'mail@possumus.tech', '2019-12-12', '');
+INSERT INTO clientes (id, nombre, apellido, email, created_at, foto) VALUES (2, 'Walter', 'SinApellido', 'mail@possumus.tech', '2018-12-12', '');
+INSERT INTO clientes (id, nombre, apellido, email, created_at, foto) VALUES (3, 'Juan Jose', 'Gurrieri', 'mail@possumus.tech', '2019-12-12', '');
+INSERT INTO clientes (id, nombre, apellido, email, created_at, foto) VALUES (4, 'Juan Domingo', 'Peron', 'mail@possumus.tech', '2018-12-12', '');
+INSERT INTO clientes (id, nombre, apellido, email, created_at, foto) VALUES (5, 'Jeremias', 'Sanchez', 'mail@possumus.tech', '2019-12-12', '');
+INSERT INTO clientes (id, nombre, apellido, email, created_at, foto) VALUES (6, 'Andres', 'Gomez', 'mail@possumus.tech', '2018-12-12', '');
+INSERT INTO clientes (id, nombre, apellido, email, created_at, foto) VALUES (7, 'Carlos', 'Tevez', 'mail@possumus.tech', '2019-12-12', '');
+INSERT INTO clientes (id, nombre, apellido, email, created_at, foto) VALUES (8, 'Mario', 'Cuevas', 'mail@possumus.tech', '2018-12-12', '');
+INSERT INTO clientes (id, nombre, apellido, email, created_at, foto) VALUES (9, 'Adrian', 'Diaz', 'mail.valdivieso@possumus.tech', '2019-12-12', '');
+INSERT INTO clientes (id, nombre, apellido, email, created_at, foto) VALUES (10, 'Luis', 'Gurrieri', 'mail@possumus.tech', '2018-12-12', '');

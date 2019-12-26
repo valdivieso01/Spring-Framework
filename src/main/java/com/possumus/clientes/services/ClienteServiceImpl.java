@@ -1,27 +1,31 @@
-package com.bolsadeideas.springboot.datajpa.app.services;
-
-import java.util.List;
+package com.possumus.clientes.services;
 
 import javax.transaction.Transactional;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import com.bolsadeideas.springboot.datajpa.app.dao.IClienteDao;
-import com.bolsadeideas.springboot.datajpa.app.models.entity.Cliente;
+import com.possumus.clientes.dao.IClienteDao;
+import com.possumus.clientes.models.Cliente;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 @Service
-public class ClienteServiceImpl  implements IClienteService{
+public class ClienteServiceImpl  implements IClienteService {
 
 	@Autowired
 	private IClienteDao clienteDao;
 	
+	//Transactional
+	//@Override
+	//public List<Cliente> findAll() {
+	//	return (List<Cliente>) clienteDao.findAll();
+	//}
+
 	@Transactional
 	@Override
-	public List<Cliente> findAll() {
-		return (List<Cliente>) clienteDao.findAll();
+	public Page<Cliente> findAll(Pageable pageable) {
+		return clienteDao.findAll(pageable);
 	}
-	
+
 	@Transactional
 	@Override
 	public void save(Cliente cliente) {

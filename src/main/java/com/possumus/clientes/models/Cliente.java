@@ -1,4 +1,4 @@
-package com.bolsadeideas.springboot.datajpa.app.models.entity;
+package com.possumus.clientes.models;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -46,11 +46,20 @@ public class Cliente implements Serializable {
 	@DateTimeFormat(pattern="yyyy-mm-dd")
 	private Date createdAt;
 
-	//@PrePersist
-	//public void prePresist() {
-	//	createdAt = new Date();
-	//}
-	
+	private String foto;
+
+	public static long getSerialVersionUID() {
+		return serialVersionUID;
+	}
+
+	public String getFoto() {
+		return foto;
+	}
+
+	public void setFoto(String foto) {
+		this.foto = foto;
+	}
+
 	public Long getId() {
 		return id;
 	}
